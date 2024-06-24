@@ -24,25 +24,3 @@ spec:
 status: {}
 
 
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: null
-  labels:
-    app: deploy-web
-    argocd.argoproj.io/instance: testargo
-  name: deploy-web
-spec:
-  ports:
-  - port: 90
-    protocol: TCP
-    targetPort: 90
-  selector:
-    app: deploy-web
-  type: NodePort
-status:
-  loadBalancer: {}
-
-
