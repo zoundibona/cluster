@@ -7,7 +7,7 @@ metadata:
     app: web-deploy
   name: web-deploy
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: web-deploy
