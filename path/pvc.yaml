@@ -4,7 +4,6 @@ metadata:
   name: example-pvc
 spec:
   
-  storageClassName: standard
   accessModes:
    - ReadWriteOnce
   resources:
